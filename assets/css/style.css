@@ -716,6 +716,7 @@ a:hover {
     gap: 24px;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 52px;
 }
 
 .homeServiceCard {
@@ -913,18 +914,22 @@ a:hover {
     margin: 0 auto;
 }
 
-.home-inventory-box{
+.home-inventory-box {
     display: flex;
     flex-wrap: wrap;
 }
-.home-inventory-cards{
+
+.home-inventory-cards {
     width: calc(100% / 4);
     padding: 7.5px;
-    
+
 }
-.home-inventory-box .boat-listing-carousel .owl-dots.disabled, .home-inventory-box .boat-listing-carousel .owl-nav.disabled{
+
+.home-inventory-box .boat-listing-carousel .owl-dots.disabled,
+.home-inventory-box .boat-listing-carousel .owl-nav.disabled {
     display: block !important;
 }
+
 .home-inventory-box .boat-listing-carousel .owl-nav button.owl-prev {
     position: absolute !important;
     top: 50% !important;
@@ -942,6 +947,7 @@ a:hover {
     z-index: 2;
     display: flex;
 }
+
 .home-inventory-box .boat-listing-carousel .owl-nav button.owl-next {
     position: absolute !important;
     top: 50% !important;
@@ -959,13 +965,177 @@ a:hover {
     display: flex;
     z-index: 2;
 }
+
 .home-inventory-box .boat-listing-carousel:hover .owl-nav button.owl-prev {
     opacity: 1;
     visibility: visible;
 }
+
 .home-inventory-box .boat-listing-carousel:hover .owl-nav button.owl-next {
     opacity: 1;
     visibility: visible;
+}
+
+.boat-listing-carousel .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-upper-content-box {
+    padding: 20px;
+    border-right: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    border-left: 1px solid #D9D9D9;
+    height: 100%;
+    height: 154px;
+}
+
+.grid-boat-title {
+    line-height: 7px;
+    height: 25px;
+}
+
+.grid-boat-title a {
+    color: var(--Blackish, #191919);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+
+.grid-price-box {
+    height: 45px;
+}
+
+.grid-price-box ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.grid-price-item:nth-child(1) {
+    color: var(--Blackish, #191919);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.grid-price-box a {
+    color: var(--Blackish, #191919);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.grid-price-box a:hover{
+    color: var(--Blackish, #191919);
+}
+
+.grid-boat-condition-list {
+    border-top: 1px solid #D9D9D9;
+}
+
+.grid-price-box .grid-price-item+.grid-price-item::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -15px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 15px;
+    background: gray;
+}
+
+.grid-boat-condition-list {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    height: 37px;
+}
+
+.grid-boat-condition-list li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.specs-list-item {
+    position: relative;
+    color: #1E1E1E;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+.specs-list-item img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.specs-list-item+.specs-list-item::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -10px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 15px;
+    background: gray;
+}
+
+.grid-price-box ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    gap: 30px;
+}
+
+.grid-price-item:nth-child(2) {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.grid-price-item+.grid-price-item::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -15px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 15px;
+    background: gray;
+}
+
+.boat-listing-carousel .item {
+    position: relative;
+    padding-top: 70%;
+}
+
+.grid-price-item {
+    position: relative;
+    list-style: none;
 }
 
 /* home page css ends here */

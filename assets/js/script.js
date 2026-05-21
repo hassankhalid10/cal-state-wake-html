@@ -102,6 +102,23 @@ $(document).ready(function () {
         });
     }
 
+    if($('.boat-listing-carousel').length){
+        $('.boat-listing-carousel').each(function () {
+            if (!$(this).hasClass('owl-loaded')) {
+                $(this).owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: false,
+                    nav: false,
+                    responsive: {
+                        0: { items: 1 },
+                        1000: { items: 1 }
+                    }
+                });
+            }
+        });
+    }
+
 
     // home page code ends here
     // ================================++++++++++++++++++++====================
