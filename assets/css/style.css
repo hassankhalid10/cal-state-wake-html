@@ -1157,3 +1157,444 @@ a:hover {
 @media (max-width: 576px) {}
 
 @media (max-width: 400px) {}
+
+/* ============================================================
+   SERVICE PAGES — CSS (service.html + service-individual.html)
+   Shared blocks (hero / form / faq) use the csw-services-* prefix
+   so they are defined once and reused across both pages.
+   ============================================================ */
+
+/* ---- shared hero ---- */
+.csw-services-hero {
+    position: relative;
+    padding-top: 31.25%;
+    min-height: 420px;
+    overflow: hidden;
+}
+
+.csw-services-hero-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.csw-services-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(25, 25, 25, 0.55);
+}
+
+.csw-services-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1080px;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.csw-services-hero-subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.csw-services-hero-cta {
+    margin-top: 40px;
+}
+
+/* ---- intro section (service.html) ---- */
+.csw-services-intro {
+    margin: 100px 0;
+}
+
+.csw-services-intro-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.csw-services-img-square {
+    position: relative;
+    padding-top: 100%;
+}
+
+.csw-services-img-square img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---- the cal state wake difference (service.html) ---- */
+.csw-services-difference {
+    background-color: #191919;
+    padding: 80px 0;
+}
+
+.csw-services-difference-heading {
+    margin-bottom: 48px;
+}
+
+.csw-services-diff-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.csw-services-diff-img {
+    position: relative;
+    padding-top: 133.85%;
+}
+
+.csw-services-diff-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.csw-services-diff-card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(180deg, rgba(25, 25, 25, 0.00) 0%, #191919 100%);
+}
+
+.csw-services-diff-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 28px 24px;
+    text-align: center;
+    z-index: 2;
+}
+
+.csw-services-diff-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.csw-services-diff-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+/* ---- service feature rows (service.html) ---- */
+.csw-services-rows {
+    margin: 100px 0;
+}
+
+.csw-services-row {
+    margin: 80px 0;
+}
+
+.csw-services-row:first-child {
+    margin-top: 0;
+}
+
+.csw-services-row:last-child {
+    margin-bottom: 0;
+}
+
+.csw-services-row-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.csw-services-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 16px 0 0;
+}
+
+.csw-services-list li {
+    color: var(--Blackish, #191919);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.csw-services-list li:last-child {
+    margin-bottom: 0;
+}
+
+.csw-services-list li strong {
+    font-weight: 700;
+}
+
+.csw-services-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.csw-services-learn-more {
+    color: #906F27;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.csw-services-learn-more:hover {
+    color: #906F27;
+    text-decoration: underline;
+}
+
+/* ---- shared request service form ---- */
+.csw-services-form-section {
+    padding: 80px 0;
+    border-top: 1px solid #D9D9D9;
+    scroll-margin-top: 80px;
+}
+
+.csw-services-form-heading {
+    margin-bottom: 40px;
+}
+
+.csw-services-form {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.csw-services-field {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.csw-services-input,
+.csw-services-textarea {
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    background-color: #FFF;
+    padding: 12px 16px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Blackish, #191919);
+    outline: none;
+}
+
+.csw-services-input {
+    height: 48px;
+}
+
+.csw-services-textarea {
+    height: 96px;
+    resize: vertical;
+}
+
+.csw-services-input::placeholder,
+.csw-services-textarea::placeholder {
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.csw-services-input:focus,
+.csw-services-textarea:focus {
+    border-color: #B08830;
+}
+
+.csw-services-field-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: var(--Blackish, #191919);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.csw-services-form-submit {
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ---- shared service faqs ---- */
+.csw-services-faq {
+    background-color: #191919;
+    padding: 64px 0;
+}
+
+.csw-services-faq-heading {
+    margin-bottom: 40px;
+}
+
+.csw-services-faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.csw-services-faq-item {
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.csw-services-faq-item:first-child {
+    padding-top: 0;
+}
+
+.csw-services-faq-question {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.csw-services-faq-answer {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/* ---- service individual — detail rows ---- */
+.csw-service-detail-rows {
+    margin: 100px 0;
+}
+
+.csw-service-detail-row {
+    margin: 80px 0;
+}
+
+.csw-service-detail-row:first-child {
+    margin-top: 0;
+}
+
+.csw-service-detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.csw-service-detail-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.csw-service-detail-img {
+    position: relative;
+    padding-top: 72.22%;
+}
+
+.csw-service-detail-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================================================
+   SERVICE PAGES — RESPONSIVE
+   ============================================================ */
+@media (max-width: 1200px) {
+    .csw-services-hero .headerHeading {
+        font-size: 64px;
+        line-height: 64px;
+    }
+}
+
+@media (max-width: 991px) {
+    .csw-services-intro,
+    .csw-services-rows,
+    .csw-service-detail-rows {
+        margin: 64px 0;
+    }
+
+    .csw-services-row,
+    .csw-service-detail-row {
+        margin: 56px 0;
+    }
+
+    .csw-services-hero .headerHeading {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .csw-services-difference {
+        padding: 64px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .csw-services-diff-card {
+        margin-bottom: 16px;
+    }
+
+    .csw-services-difference .row:last-child .col-md-4:last-child .csw-services-diff-card {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .csw-services-hero .headerHeading {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .csw-services-intro .mainHeading,
+    .csw-services-rows .mainHeading,
+    .csw-service-detail-rows .mainHeading,
+    .csw-services-difference .mainHeadingWhite,
+    .csw-services-form-heading,
+    .csw-services-faq-heading {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .csw-services-intro,
+    .csw-services-rows,
+    .csw-service-detail-rows {
+        margin: 48px 0;
+    }
+
+    .csw-services-form-section,
+    .csw-services-difference {
+        padding: 48px 0;
+    }
+
+    .csw-services-actions {
+        gap: 20px;
+    }
+}
