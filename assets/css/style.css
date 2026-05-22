@@ -1846,3 +1846,20 @@ a:hover {
         line-height: 32px;
     }
 }
+
+/* ---- brand / financing / about — generic section spacer ---- */
+.csw-section {
+    margin: 100px 0;
+}
+
+@media (max-width: 991px) {
+    .csw-section {
+        margin: 64px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .csw-section {
+        margin: 48px 0;
+    }
+}
