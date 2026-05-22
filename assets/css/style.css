@@ -1891,3 +1891,32 @@ a:hover {
         margin-top: 24px;
     }
 }
+
+/* ---- blog list : category filter + card meta ---- */
+.csw-blog-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 32px;
+    margin-bottom: 56px;
+}
+
+.csw-blog-filter-link {
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+}
+
+.csw-blog-filter-link.active {
+    color: #B08830;
+    border-bottom-color: #B08830;
+}
+
+.csw-blog-cat {
+    color: var(--Blackish, #191919);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
